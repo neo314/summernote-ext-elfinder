@@ -30,10 +30,11 @@
         // create button
         var button = ui.button({
           contents: '<i class="fa fa-list-alt"/> File Manager',
-          tooltip: 'elfinder',
+          //tooltip: 'elfinder',
           click: function () {
-              elfinderDialog($(this).closest('.note-editor').parent().children('.summernote'));
-          }
+	            	elfinderDialog($(this).closest('.note-editor').prev('[data-editor="summernote"]'));
+        		}
+          });
         });
         
         // create jQuery object from button instance.
