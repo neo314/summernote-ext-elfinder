@@ -4,7 +4,13 @@ Summernote Plugin for elFinder File Manager
 ## Installation
 - Download plugin files. Extract it and copy into your summernote plugin directory.
 - Include the summernote ext javascript file into your html page.
-- Includes code for images and file links. Note that your copy of Summernote must 
+- Each element, DIV or TEXTAREA that is an editor must include the attribute/value pair of data-editor="summernote". This 		version of the plugin allows multiple editors on one page to function correctly.
+	Example: <textarea id="sn1" name="sn1" class="summernote" data-editor="summernote"></textarea>
+	Example: <div class="summernote" data-editor="summernote">
+	(The class summernote is being used based on the example code below. Any jQuery selector can be used to create the 		editors. If you use something like $('textarea').summernote({..., the class would not be required.
+- Includes code for images and file links. 
+	Note that your copy of Summernote must contain the changes noted at the link below for root relative link to work.
+	https://github.com/summernote/summernote/pull/2971
 
     ```javascript
     <script src="path/to/plugin/summernote-ext-elfinder/summernote-ext-elfinder.js"></script>
