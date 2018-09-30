@@ -32,6 +32,7 @@
           contents: '<i class="fa fa-list-alt"/> File Manager',
           //tooltip: 'elfinder',
           click: function () {
+		  // Include the [data-editor="summernote"] in each editor element of page
 	            	elfinderDialog($(this).closest('.note-editor').prev('[data-editor="summernote"]'));
         		}
           });
