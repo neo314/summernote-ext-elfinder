@@ -38,8 +38,8 @@ Summernote Plugin for elFinder File Manager
       		width : 840,
       		height: 450,
       		destroyOnClose : true,
-		// Use the parameter below to avoid an anchor link added to url
-		useBrowserHistory: false,
+      		// Use the parameter below to avoid an anchor link added to url
+      		useBrowserHistory: false,
       		getFileCallback : function(file, fm) {
                 console.log(file);
                 var link_url = fm.convAbsUrl(file.url);
